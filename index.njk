@@ -1,0 +1,24 @@
+---
+layout: layout
+title: Posts
+---
+
+<p>
+    <strong>Hi, I'm Peter 👋</strong>
+</p>
+<p>
+    Here, I like to share my thoughts on productivity, technology, personal development, and creativity.
+</p>
+<h1>Posts</h1>
+
+{%- for year, posts in collections.post | groupby('data.year') | dictsort | reverse -%}
+    <h2>{{ year }}</h2>
+    {%- for post in posts | reverse -%}
+        <ul class="post-list">
+            <li class="post-list-item">
+                <time class="post-date" datetime="{{ post.date }}">{{ post.date | date('DD') }}</time>
+                <a href={{ post.url }}>{{ post.data.title }}</a>
+            </li>
+        </ul>
+    {%- endfor -%}
+{%- endfor -%}

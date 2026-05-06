@@ -1,0 +1,23 @@
+---
+layout: layout
+---
+
+<hgroup>
+    <h1>{{title}}</h1>
+</hgroup>
+{{ content | safe }}
+
+<br>
+
+<ul class="post-footer-items">
+    <li class="post-footer-item">
+        <small>
+            <time class="post-date" datetime="{{ page.date }}">{{ page.date | date('fff') }}</time>
+        </small>
+    </li>
+    <li class="post-footer-item">
+        <small>
+            <a href="mailto:hello@peterbryantmusic.com?subject=Re: {{ title }}">Reply by email</a>
+        </small>
+    </li>
+</ul>
