@@ -3,12 +3,6 @@ layout: layout
 title: Posts
 ---
 
-<p>
-    <strong>Hi, I'm Peter 👋</strong>
-</p>
-<p>
-    Here, I like to share my thoughts on productivity, technology, personal development, and creativity.
-</p>
 <h1>Posts</h1>
 
 {%- for year, posts in collections.post | groupby('data.year') | dictsort | reverse -%}
