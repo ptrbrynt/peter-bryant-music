@@ -62,6 +62,7 @@
 
         <footer class="site-footer">
             <div class="container">
+
                 <ul class="footer-links">
                     {%- for pg in collections['footer-page'] -%}
                         <li class="footer-link">
@@ -70,15 +71,20 @@
                             </a>
                         </li>
                     {%- endfor -%}
+                    <li class="footer-link">
+                        <a href="https://buttondown.com/peterbryantmusic" target="_blank">
+                            <small>Newsletter</small>
+                        </a>
                 </ul>
 
                 <p>
                     <small>
-                        Copyright © Peter Bryant {{ now | date("yyyy") }}
+                            Copyright © Peter Bryant {{ now | date("yyyy") }}
                     </small>
                 </p>
 
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
