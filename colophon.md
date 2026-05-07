@@ -17,8 +17,7 @@ a page that describes how the site is made, with what tools, supporting what tec
 
 ## Essential Apps
 
-- [Obsidian](https://obsidian.md) for writing posts
-- VSCode for working on the website code
+- VSCode for working on the website code and writing posts
 
 ## Server
 
@@ -28,7 +27,6 @@ The website is hosted on CloudFlare Workers.
 
 - [11ty](https://11ty.dev)
 - [pico](https://picocss.com)
-- [prism.js](https://prismjs.com)
 - [GitHub](https://github.com/ptrbrynt/)
 
 ## AI
