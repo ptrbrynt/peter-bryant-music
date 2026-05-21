@@ -14,7 +14,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addPassthroughCopy("images");
-  // eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("admin");
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom",
